@@ -173,7 +173,7 @@ const ChatApp = () => {
                     onClick={setUser}
                     disabled={!username.trim()}
                   >
-                    Set Username
+                    Your Name
                   </Button>
                 </div>
 
