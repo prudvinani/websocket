@@ -31,7 +31,8 @@ const ChatApp = () => {
   const messagesEndRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const websocket = new WebSocket('ws://localhost:5001');
+    const websocket = new WebSocket(import.meta.env.VITE_BACKENDURL);
+    console.log(websocket)
     setWs(websocket);
 
     websocket.onopen = () => {
